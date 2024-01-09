@@ -1,0 +1,84 @@
+html {
+    background: linear-gradient(to right, #02AABD, #00CDAC);
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+article {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 12pt;
+    flex-flow: row wrap;
+    padding: 0 20px 0 20px;
+    flex-basis: 80%;
+}
+
+footer {
+    display: flex;
+    text-align: left;
+    font-size: 0.9em;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    height: 10%;
+    flex-basis: 100%;
+    justify-content: left;
+    margin-top: 90px;
+}
+
+li {
+    margin: 10px 0;
+}
+
+form {
+    width: 500px;
+    padding: 1em;
+    margin-left: 15px;
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
+fieldset {
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
+label {
+    padding-right: 0.2em;
+}
+
+#nome {
+    width: 200px;
+    margin-right: 1.6em;
+}
+
+legend {
+    font-size: large;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+textarea {
+    vertical-align: top;
+    height: 6em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    width: 400px;   
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border-color: black;
+}
+
+@media only screen and (max-device-width: 900px),
+(orientation: landscape) {
+    body {
+        width: 100%;
+        height: 100%;
+
+    }
+}

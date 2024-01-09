@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sustentabilidade</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="/styles/menu.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/styles/ideias.css">
+    <link rel="icon" type="image/png" href="/images/shortcuticon.png">
+    <meta name="author" content="André Meseiro, Pedro Lopes" />
+    <meta name="description" content="Apresentação do tema" />
+    <meta name="generator" content="VS Code" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>
+            <a href="#">
+                <img class="primary-icon" src="/images/icon.png" />
+            </a>
+        </div>
+        <ul class="nav-list">
+            <li class="list-item">
+                <a id="menuSelected" href="index.html">Início</a>
+            </li>
+            <li class="list-item">
+                <a id="menuUnidas" href="unidas.html">As Nações Unidas</a>
+            </li>
+            <li class="list-item">
+                <a id="menuPortugal" href="portugal.html">Portugal e a sustentabilidade</a>
+            </li>
+            <li class="list-item">
+                <a id="menuIps" href="ips.html">IPS Sustentável</a>
+            </li>
+            <li class="list-item">
+                <a id="menuPropostas" href="propostas.html">Mundo mais sustentável</a>
+            </li>
+            <li class="list-item">
+                <a id="menuIdeias" href="Ideias.html">Campus sustentável</a>
+            </li>
+            <li class="list-item">
+                <a id="menuAutores" href="autores.html">Sobre nós</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <section>
+                <h1>Ideias da equipa para um campus sustentável</h1>
+                <ul>
+                    <li>Criação do máximo de áreas verdes possíveis dentro do campus.</li>
+                    <li>Substituição de tudo o que seja material feito de plástico por papel, sempre que possível.</li>
+                    <li>Instalação de painéis solares.</li>
+                    <li>Instalação de postos de reciclagem espalhados pelo campus.</li>
+                    <li>Aproveitamento máximo da luz natural.</li>
+                    <li>Implementação postos de carregamento para carros elétricos nos estacionamentos do campus.</li>
+                    <li>Procurar a continua requalificação das infraestruturas e equipamentos, para a melhoria continua
+                        da
+                        eficiência
+                        energética.</li>
+                </ul>
+            </section>
+        </article>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Informações do utilizador</legend>
+                <label for="nome">Nome:</label>
+                <input id="nome" name="nome" type="text" />
+                <label for="idade">Idade:</label>
+                <select id="idade" name="idade">
+                    <option value="Menor">&lt;18</option>
+                    <option value="Jovem">18-21</option>
+                    <option value="Jovem adulto">22-29</option>
+                    <option value="Adulto">30-39</option>
+                    <option value="Adulto avançado">40-49</option>
+                    <option value="Idoso">&gt;=50</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Ideias para tornar um campus mais sustentável</legend>
+                <label for="mensagem">Mensagem:</label><br />
+                <textarea id="mensagem" name="mensagem" rows="10" cols="50" placeholder="Introduza a sua ideia"></textarea>
+                <br />
+                <input id="enviar" name="enviar" type="submit" onClick="submitForm()" value="Enviar">
+                <script>
+                    function submitForm() {
+                        var n = document.getElementById("nome").value;
+                        var i = document.getElementById("idade").value;
+                        var m = document.getElementById("mensagem").value;
+
+                        alert("Nome: "+n+"\nIdade: "+i+"\nMensagem: "+m+"\nObrigado pela sua opinião");
+                    }
+                </script>
+                <input id="limpar" name="limpar" type="reset" value="Limpar" />
+            </fieldset>
+        </form>
+    </main>
+</body>
+<footer>
+    <address>
+        <br>Feito por: André Meseiro, Pedro Lopes (para mais info, ver <a href="autores.html">Sobre Nós</a> &copy)
+        </br>
+        <br>E-mails:</br>
+        <a href="mailto:202100225@estudantes.ips.pt">
+            202100225@estudantes.ips.pt
+        </a>
+        <br></br>
+        <a href="mailto:202100319@estudantes.ips.pt">
+            202100319@estudantes.ips.pt
+        </a>
+    </address>
+</footer>
+
+</html>
